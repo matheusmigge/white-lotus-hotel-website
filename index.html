@@ -43,75 +43,75 @@
             <figcaption>Unidade Sicília - Itália</figcaption>
         </figure>
         <figure>
-            <img src="images/nassau.jpg" alt="Resort em Nassau - Itália">
+            <img src="images/nassau.jpg" alt="Resort em Nassau - Bahamas">
             <figcaption>Unidade Nassau - Bahamas</figcaption>
         </figure>            
     </section>
-
-        <!-- <section>
-
-            <h2>Taxas e serviços</h2>
-            <p>Veja nossas taxas para serviços</p>
-
-            <table border="">
-                <caption>Descrição dos serviços e respectivos valores</caption>
-                <thead>
-                    <tr>
-                        <th>
-                            Serviço
-                        </th>
-                        <th>
-                            Valor
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            Reserva de hotel
-                        </td>
-                        <td>
-                            R$ 150,00
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Compra de passagens
-                        </td>
-                        <td>
-                            R$ 100,00
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Aluguel de carros
-                        </td>
-                        <td>
-                            R$ 50,00
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </section> -->
 
     <section>
         <h2>Contato</h2>
         <form action="" method="get">
 
-            <label>Nome</label>  <br>
-            <input type="text" required name="nome" id="">   <br><br>
+            <fieldset>
+                <legend>Dados da viagem</legend><br>
+                
+                <label>Nome</label>  <br>
+                <input type="text" required name="nome" id="">   <br><br>
+                
+                <label>E-mail</label>    <br>
+                <input type="email" required name="email" id=""> <br><br>
+
+                <label>Data de ida</label>   <br>
+                <input type="date" required name="dataIda" id="">    <br><br>
+
+                <label>Data de volta</label> <br>
+                <input type="date" required name="dataVolta" id="">  <br><br>
+
+                <label>Quantidade de pessoas</label>    <br>
+                <input type="number" required name="qtdPessoas" id=""> <br><br>     
+            </fieldset> <br>
+
+            <fieldset>
+                <legend>Qual serviço deseja contratar?</legend>
+                <label>
+                    <input type="checkbox" name="passagens" value="Passagens">Compra de passagens <br>
+                </label>
+                <label>
+                    <input type="checkbox" name="hospedagem" value="hospedagem">Reserva de hospedagem <br>
+                </label>
+                <label>
+                    <input type="checkbox" name="veiculos" value="veiculos">Aluguel de veículos <br>
+                </label>
+            </fieldset> <br>
             
-            <label>E-mail</label>    <br>
-            <input type="email" required name="email" id=""> <br><br>
+            <fieldset>
+                <legend>Escolha a forma de pagamento</legend><br>
+                <label>
+                    <input type="radio" name="formaPagamento" value="Cartão de crédito">Cartão de crédito   <br>
+                </label>
+                <label>
+                    <input type="radio" name="formaPagamento" value="Boleto">Boleto <br>
+                </label>
+                <label>
+                    <input type="radio" name="formaPagamento" value="Pix">Pix   <br>
+                </label>
+            </fieldset> <br>
 
-            <label>Data de ida</label>   <br>
-            <input type="date" required name="dataIda" id="">    <br><br>
-
-            <label>Data de volta</label> <br>
-            <input type="date" required name="dataVolta" id="">  <br><br>
-
-            <label>Quantidade de pessoas</label><br>
-            <input type="number" required name="qtdPessoas" id=""> <br><br> 
+            <fieldset>
+                <legend>Escolha o prazo de pagamento</legend>
+                <select name="prazoPagamento">
+                    <option value="aVista">À vista</option>
+                    <option value="2x">2x s/ juros</option>
+                    <option value="3x">3x s/ juros</option>
+                    <option value="4x">4x s/ juros</option>
+                    <option value="5x" selected>5x s/ juros</option>
+                    <option value="6x">6x c/ juros</option>
+                    <option value="7x">7x c/ juros</option>
+                    <option value="8x">8x c/ juros</option>
+                    <option value="9x">9x c/ juros</option>
+                    <option value="10x">10x c/ juros</option>
+                </select>
+            </fieldset>
 
             <label>Comentário</label>    <br>
             <textarea name="comentario" id="" cols="" rows="5"></textarea>  <br><br>
