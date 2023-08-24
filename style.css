@@ -1,20 +1,39 @@
-/* header p{
-    color: #ffffff;
-    font-weight: 600;
-}
-
-h1{
-    font-size: 63px;
-    color: #303030;
-    padding: 15px;
+body h1{
+    font-size: 40px;
     line-height: 1em;
-    color: white;
+    color: black;
     text-align: center;
 }
 
-h2{
+body h2{
     font-size: 24px;
-    text-transform: uppercase;
     color: #303030;
     font-weight: 600;
-} */
+    text-align: center;
+}
+
+body p{
+    text-indent: 2em;
+    text-align: justify;
+}
+
+.carousel-item h5{
+    text-shadow: 4px 4px 4px black;
+    font-size: 35px;
+}
+
+.carousel-item img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-body h5{
+    /* font-size: 15px; */
+    text-align: center;
+}
+
+.row img{
+    height: 300px;
+    object-fit: cover;
+}
+

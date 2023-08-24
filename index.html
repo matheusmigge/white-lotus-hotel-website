@@ -1,84 +1,158 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The White Lotus Hotel</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <header class="container-fluid p-3 bg-warning text-center">
+<header class="container-fluid p-0 bg-warning text-center">
 
-        <nav class="navbar navbar-expand-lg bg-warning">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">The White Lotus Hotel</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg bg-warning px-5" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">The White Lotus Hotel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Unidades</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Taxas</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Contato
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Unidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Taxas</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Contato
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
                 </ul>
 
-              </div>
             </div>
-          </nav>
-
-        <h1>Uma rede global de hotéis para tornar sua viagem inesquecível.</h1>
-    </header>
-
-    <section class="container-fluid bg-light text-center p-5">
-        <br>
-        <h2>Conheça nossas unidades</h2>
-        <p>
-            Mussum Ipsum, cacilds vidis litro abertis. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Diuretics paradis num copo é motivis de denguis. Suco de cevadiss deixa as pessoas mais interessantis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Per aumento de cachacis, eu reclamis. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Copo furadis é disculpa de bebadis, arcu quam euismod magna.
-            <br>
-            <br>
-            Mussum Ipsum, cacilds vidis litro abertis.  Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Casamentiss faiz malandris se pirulitá. Atirei o pau no gatis, per gatis num morreus. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Cevadis im ampola pa arma uma pindureta. 
-            <br>
-            <br>
-            <a href="https://en.wikipedia.org/wiki/The_White_Lotus">Conheça nossa história aqui</a>
-            <hr>
-        </p>
-
-        <div class="row">
-            <figure class="col text-center">
-                <img src="images/hawaii.jpg" class="img-fluid" alt="Resort no Hawaii - EUA">
-                <figcaption>Unidade Hawaii - EUA</figcaption>
-            </figure>
-            <figure class="col text-center">
-                <img src="images/sicily.jpg" class="img-fluid" alt="Resort na Sicília - Itália">
-                <figcaption>Unidade Sicília - Itália</figcaption>
-            </figure>
-            <figure class="col text-center">
-                <img src="images/nassau.jpg" class="img-fluid" alt="Resort em Nassau - Bahamas">
-                <figcaption>Unidade Nassau - Bahamas</figcaption>
-            </figure>  
         </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide" id="carousel-div">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/carousel/hawaii-resort.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Entre mares e montanhas</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/carousel/sicily-village.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Uma linda paisagem à cada esquina</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/carousel/nassau-beach.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Um paraíso te aguarda</h5>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</header>
+
+<body>
+    <section class="container-fluid bg-light px-5 pt-4" id="texts-section">
+        <h1>Uma rede global de hotéis para tornar sua viagem inesquecível.</h1>
+        <br>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales neque ac nisl condimentum viverra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque ultricies, mi sed rutrum auctor, ipsum urna euismod nisi, nec fermentum magna lorem at erat. Aenean luctus lorem in tortor tristique, quis faucibus ante posuere. Donec sed pretium diam. Suspendisse bibendum faucibus mauris a egestas. Mauris pulvinar sagittis tellus, ut interdum sapien commodo eget. Duis nec faucibus leo. Aliquam a nisi purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus imperdiet nisl at mi cursus interdum at vel tellus. Pellentesque dictum quam tortor. Cras nec interdum felis.
+        </p>
+        <p>
+            Maecenas dapibus risus purus, ac hendrerit lacus iaculis nec. Curabitur tempor, felis at ultricies sodales, magna nisl aliquet lacus, vitae ultrices ipsum dui sit amet justo. Duis in nibh nec velit rutrum scelerisque. Pellentesque viverra imperdiet convallis. Morbi scelerisque, ante a elementum maximus, orci tortor dictum nulla, et semper neque metus quis ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt sit amet purus eu blandit.
+        </p>
+        <a href="https://en.wikipedia.org/wiki/The_White_Lotus">Conheça nossa história aqui</a>
+        <hr>
+        <h2>Conheça as unidades White Lotus</h2>
     </section>
 
+    <div class="row row-cols-1 row-cols-md-3 g-4 px-5 py-3" id="cards-div">
+        <div class="col">
+            <div class="card h-100">
+                <img src="images/cards/hawaii.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Hawaii - EUA</h5>
+                    <h1 class="card-subtitle text-muted ">Diárias a partir de R$ 250,00</h1>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Em até 12x sem juros</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="images/cards/sicily.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Sicília - Itália</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                        content.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Em até 12x sem juros</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="images/cards/nassau.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Nassau - Bahamas</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even longer content than the first to show that equal
+                        height action.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Em até 12x sem juros</small>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <section class="container-fluid bg-warning text-center p-5">
+    <br>
+
+    <section class="container-fluid bg-warning text-center px-5 pt-4 pb-1" id="table-section">
         <h2>Taxas de serviços</h2>
 
         <table class="table table-warning table-striped table-hover table-bordered border-warning">
@@ -107,25 +181,26 @@
         </table>
     </section>
 
-    <section class="container-fluid bg-light p-5">
+    <section class="container-fluid bg-light p-5" id="quotation-section">
         <h2 class="text-center">Faça já seu orçamento!</h2>
         <form action="" method="get">
 
             <fieldset>
                 <legend>Dados da viagem</legend><br>
-                
+
                 <div class="mb-3">
                     <label class="form-label" for="nome">
                         Nome
                     </label>
-                    <input type="text" class="form-control" required name="nome" id="nome">    
+                    <input type="text" class="form-control" required name="nome" id="nome">
                 </div>
 
                 <div class="mb-3">
                     <label class="form-label" for="email">
                         E-mail
                     </label>
-                <input type="email" class="form-control" required name="email" id="email" placeholder="seuemail@seudominio.com">
+                    <input type="email" class="form-control" required name="email" id="email"
+                        placeholder="seuemail@seudominio.com">
                 </div>
 
                 <div class="mb-3">
@@ -141,42 +216,48 @@
                     </label>
                     <input type="date" class="form-control" required name="dataVolta" id="dataVolta">
                 </div>
-   
+
             </fieldset>
             <fieldset>
                 <legend>Qual serviço deseja contratar?</legend>
                 <div class="form-check">
-                    <input type="checkbox" class="form-check-input" name="passagens" value="Passagens" id="compraPassagens">
+                    <input type="checkbox" class="form-check-input" name="passagens" value="Passagens"
+                        id="compraPassagens">
                     <label class="form-check-label" for="compraPassagens">
                         Compra de passagens
-                    </label>    
+                    </label>
                 </div>
 
                 <div class="form-check">
-                    <input type="checkbox" class="form-check-input" name="hospedagem" value="Hospedagem" id="reservaHospedagem">
+                    <input type="checkbox" class="form-check-input" name="hospedagem" value="Hospedagem"
+                        id="reservaHospedagem">
                     <label class="form-check-label" for="reservaHospedagem">
                         Reserva de hospedagem
-                    </label>    
+                    </label>
                 </div>
-                
+
                 <div class="form-check">
-                    <input type="checkbox" class="form-check-input" name="veiculos" value="Veiculos" id="aluguelVeiculos">
+                    <input type="checkbox" class="form-check-input" name="veiculos" value="Veiculos"
+                        id="aluguelVeiculos">
                     <label class="form-check-label" for="aluguelVeiculos">
                         Aluguel de veículos
-                    </label>    
+                    </label>
                 </div>
             </fieldset>
             <br>
             <button class="btn btn-secondary">Enviar</button>
         </form>
     </section>
-
-    <footer class="container-fluid bg-warning p-5 text-center"> 
-
-        <p>Desenvolvido por Matheus Migge - 2023</p>
-
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
+
+<footer class="container-fluid bg-warning pt-4 pb-2 text-center">
+
+    <p>Desenvolvido por Matheus Migge - 2023</p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous">
+    </script>
 </html>
