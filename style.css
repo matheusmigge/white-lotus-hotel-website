@@ -27,13 +27,21 @@ body p{
     object-fit: cover;
 }
 
-.card-body h5{
-    /* font-size: 15px; */
+.card-body h1{
+    font-size: 10px;
     text-align: center;
+}
+
+.card-body h5{
+    text-align: center;
+}
+
+.row{
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .row img{
     height: 300px;
     object-fit: cover;
 }
-
